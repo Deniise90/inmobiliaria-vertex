@@ -11,12 +11,26 @@
 <body>
 
 <!-- inicio del navbar  -->
-    <a href="#">Inicio</a>
-    <a href="#">Login</a>
-    <br>
+    <div class="flex justify-between m-4">
+        <div >
+            aca va el logo
+        </div>
+        <div class="flex justify-stretch space-x-4">
+            <a href="#" class="hover:bg-fuchsia-500">Inicio</a>
+            <a href="#" class="hover:bg-fuchsia-500">Alquieres</a>
+             <a href="#" class="hover:bg-fuchsia-500">Compra</a>
+              <a href="#" class="hover:bg-fuchsia-500">Contactános</a>
+        </div>
+        <div class="shadow-cyan-500/50">
+            <button class="bg-sky-500 border-4 border-double rounded-lg">Iniciar sesión</button>
+        </div>
+        
+   
+    </div>
+   
 
 <!-- fin del navbar  -->
-    {% block content %}
+    {% block content %} <!-- el blcok content es donde ira el contenido que utilice esta base-->
     {% endblock %}
 
 <!-- inicio del footer  -->
